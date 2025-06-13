@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerAnio.setAdapter(anioAdapter);
 
         autoCompleteTextViewDocumentType = findViewById(R.id.autoCompleteTextViewDocumentType);
-        String[] documentTypes = new String[]{"Pasaporte", "Cédula"};
+        String[] documentTypes = new String[]{"Pasaporte", "Cédula", "Licencia de Conducir"};
         ArrayAdapter<String> documentTypeAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, documentTypes);
         autoCompleteTextViewDocumentType.setAdapter(documentTypeAdapter);
         autoCompleteTextViewDocumentType.setOnClickListener(v -> autoCompleteTextViewDocumentType.showDropDown());
